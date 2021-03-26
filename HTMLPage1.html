@@ -1,8 +1,7 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Sans" />
     <meta charset="utf-8" />
     <title>Tribute page</title>
     <style>
@@ -10,7 +9,6 @@
             margin: 30px;  
 		}
         .title{
-            font-family: "Josefin Sans";
             text-align: center; 
             background-color: white;
             padding-bottom: 15px;
@@ -19,83 +17,645 @@
         .middle-container{
             width: 70%;
             margin: auto;
- 
 		}
-        .charizard-img{
-            padding: 0 30px 0 30px;
-            float: left;
+        .overview, .pokemon-left, .pokemon-right{
             box-sizing: border-box;
 		}
-        .charizard{
+        .overview{
+            padding: 0 30px 10px 30px;
+            float: left;  
+		}
+        .pokemon-left{
+            margin: 0 10%;
+            float: left;
+		}
+        .pokemon-right{
+            margin: 0 10%;
+            float: right;
+		}
+        .overview-img, .pokemon-img{
             width: 250px;
             border-radius: 15px;
             box-shadow: 0 0 15px 5px rgba(3,3,3,0.3);
             opacity: 1; 
             transition: 0.5s;
 		}
-        .charizard-img:hover .charizard{
+        .pokemon-right:hover .pokemon-img, .pokemon-left:hover .pokemon-img{
             transform: scale(1.2, 1.2);
 		}
         .words-start{   
-            margin: 0 0 10px 0;
+            margin: 0 0 0 0;
+        }
+        .pokemon-container{
+            padding: 40px 0;
+		}
+        .pokemon-container::after{
+            content: "";
+            clear: both;
+            display: table;
+		}
+        .pokemon-words-container-right{  
+            text-align: right;
+		}
+        .pokemon-name{   
+            font-size: 30px;
+            margin: 0;
+            padding-top: 90px;
         }
         .words{   
-            margin: 15px 0;
+            padding: 10px 0;
+            margin: 0;
         }
+        .overview-end{
+            margin: 50px 0;
+		}
     </style>
 </head>
 <body>
     <h1 class="title">Pokemon Gold Star ☆</h1>
     <div class="middle-container">
-        <div class="charizard-img">
-            <img class="charizard" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/156884.jpg" alt="charizard">
+
+        <!-- Overview -->
+        <div>
+            <div class="overview">
+                <img class="overview-img" src="https://i.imgur.com/IsP7Rsl.jpg" alt="charizard">
+            </div>
+            <p class="words-start">
+                Pokémon Star (pronounced Pokémon Star) are a type of Pokémon found in the 
+                Pokémon Trading Card Game that depict the alternate color variation of a Pokémon.
+            </p>
+            <p class="words">
+                First introduced in the EX Team Rocket Returns expansion, Pokémon Star saw the 
+                return of Shining/Alternate Color Pokémon after their brief appearance in the Neo 
+                Revelation and Neo Destiny expansions. While they were still bound by the 1-per 
+                deck rule, they no longer featured multiple energy-type attacks (with the exception 
+                of Latias, Latios and Rayquaza from EX Deoxys) and often had very beneficial 
+                attacks, making them much more playable.
+            </p>
+            <p class="words">
+                Their card design, like that of Pokémon-ex is also unique. The character art 
+                depicts the Pokémon with portions of their body protruding outside of the character 
+                window, almost as if they are "jumping out" of the card. Various areas of the card 
+                design have golden tinges added to it, such as the corners of the attack text box 
+                and character window; the shadows of these graphics are also holographic.
+            </p>
+            <p class="words">
+                Like their predecessors, these cards were still difficult to obtain, the odds of 
+                finding one roughly 1 in 2 booster boxes, sending their prices soaring. By far the 
+                most valuable Pokémon Star are the Japanese versions of the Eeveelutions, which were 
+                awarded as tiered prize cards to members of the Pokémon Players Club. Complete sets
+                and the higher tier cards still command high prices. Their subsequent English release 
+                in the EX Power Keepers expansion and POP Series 5 promotional set saw their initial 
+                demand decrease, though the Japanese World Champions Pack reprints of Vaporeon Star, 
+                Jolteon Star, and Flareon Star proved more popular than their original prints due 
+                to the distribution method of the set.
+            </p>
+            <p class="words">
+                δ Delta Species Pokémon Star are always the type that their alternate-colored form 
+                takes on the color of. For example, Gyarados Star δ is a Fire-type because Shiny Gyarados are red.
+            </p>   
+            <p class="words">
+                All Pokémon Star are Basic Pokémon, and all Pokémon Star cards are illustrated by Masakazu Fukuda.
+            </p>
+            <p class="words">
+                In the Diamond & Pearl expansion, Pokémon Star and Pokémon-ex were essentially jointly
+                replaced by Pokémon LV.X, though Shiny Pokémon were again featured in the TCG in the 
+                Stormfront expansion. However, they received no special rules, multi-Energy attacks or visual 
+                enhancements. Their only difference from regular cards this time around was a special "starry"
+                foil reminiscent of early English foil treatments (in Japan), or a unique collection number 
+                with the prefix "SH" (outside Japan). This change perhaps reflects that in the Pokémon games, 
+                Shiny Pokémon are no different to normal Pokémon, other than that they are a different color.
+            </p>
         </div>
-        <p class="words-start">
-            Pokémon Star (pronounced Pokémon Star) are a type of Pokémon found in the 
-            Pokémon Trading Card Game that depict the alternate color variation of a Pokémon.
-        </p>
-        <p class="words">
-            First introduced in the EX Team Rocket Returns expansion, Pokémon Star saw the 
-            return of Shining/Alternate Color Pokémon after their brief appearance in the Neo 
-            Revelation and Neo Destiny expansions. While they were still bound by the 1-per 
-            deck rule, they no longer featured multiple energy-type attacks (with the exception 
-            of Latias, Latios and Rayquaza from EX Deoxys) and often had very beneficial 
-            attacks, making them much more playable.
-        </p>
-        <p class="words">
-            Their card design, like that of Pokémon-ex is also unique. The character art 
-            depicts the Pokémon with portions of their body protruding outside of the character 
-            window, almost as if they are "jumping out" of the card. Various areas of the card 
-            design have golden tinges added to it, such as the corners of the attack text box 
-            and character window; the shadows of these graphics are also holographic.
-        </p>
-        <p class="words">
-            Like their predecessors, these cards were still difficult to obtain, the odds of 
-            finding one roughly 1 in 2 booster boxes, sending their prices soaring. By far the 
-            most valuable Pokémon Star are the Japanese versions of the Eeveelutions, which were 
-            awarded as tiered prize cards to members of the Pokémon Players Club. Complete sets
-            and the higher tier cards still command high prices. Their subsequent English release 
-            in the EX Power Keepers expansion and POP Series 5 promotional set saw their initial 
-            demand decrease, though the Japanese World Champions Pack reprints of Vaporeon Star, 
-            Jolteon Star, and Flareon Star proved more popular than their original prints due 
-            to the distribution method of the set.
-        </p>
-        <p class="words">
-            δ Delta Species Pokémon Star are always the type that their alternate-colored form 
-            takes on the color of. For example, Gyarados Star δ is a Fire-type because Shiny Gyarados are red.
-        </p>
-        <p class="words">
-            All Pokémon Star are Basic Pokémon, and all Pokémon Star cards are illustrated by Masakazu Fukuda.
-        </p>
-        <p class="words">
-            In the Diamond & Pearl expansion, Pokémon Star and Pokémon-ex were essentially jointly
-            replaced by Pokémon LV.X, though Shiny Pokémon were again featured in the TCG in the 
-            Stormfront expansion. However, they received no special rules, multi-Energy attacks or visual 
-            enhancements. Their only difference from regular cards this time around was a special "starry"
-            foil reminiscent of early English foil treatments (in Japan), or a unique collection number 
-            with the prefix "SH" (outside Japan). This change perhaps reflects that in the Pokémon games, 
-            Shiny Pokémon are no different to normal Pokémon, other than that they are a different color.
-        </p>
+
+        <!-- Divider for overview and Pokemon decsription -->
+        <div style="border-bottom: 2px solid rgba(0,0,0,0.6); padding: 20px 0; margin: 0;"></div>
+
+        <!-- Pokemon right align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-right">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/160913.jpg" alt="mudkip">
+            </div>
+            <div class="pokemon-words-container-right">
+                <p class="pokemon-name">
+                    <b>Mudkip</b>
+                </p>
+                <p class="words">
+                    Mudkip Star (Japanese: ミズゴロウ☆ Mizugorou ☆) is a Water-type Basic Pokémon card. It 
+                    is part of the EX Team Rocket Returns expansion.
+                </p>
+                <p class="words">
+                    Whirlpool is a move in the Pokémon games that Mudkip can learn. Spring Back's Japanese name is 
+                    that of Payback, a move later introduced in Generation IV that Mudkip cannot learn. 
+                    This card features the Shiny version of Mudkip.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon left align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-left">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/161040.jpg" alt="Torchic">
+            </div>
+            <div class="pokemon-words-container-left">
+                <p class="pokemon-name">
+                    <b>Torchic</b>
+                </p>
+                <p class="words">
+                    Torchic Star (Japanese: アチャモ☆ Achamo ☆) is a Fire-type Basic Pokémon card. It 
+                    is part of the EX Team Rocket Returns expansion
+                </p>
+                <p class="words">
+                    Spring Back's Japanese name is that of Payback, a move later introduced in 
+                    Generation IV that Torchic cannot learn. This card features the Shiny version of Torchic.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon right align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-right">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/161041.jpg" alt="Treecko">
+            </div>
+            <div class="pokemon-words-container-right">
+                <p class="pokemon-name">
+                    <b>Treecko</b>
+                </p>
+                <p class="words">
+                    Treecko Star (Japanese: キモリ☆ Kimori ☆) is a Grass-type Basic Pokémon card. 
+                    It is part of the EX Team Rocket Returns expansion.
+                </p>
+                <p class="words">
+                    Tackle is a move in the Pokémon games that Treecko cannot learn. Spring Back's 
+                    Japanese name is that of Payback, a move later introduced in the Generation IV 
+                    Pokémon games that Treecko cannot learn. This card features the Shiny version of Treecko.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon left align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-left">
+                <img class="pokemon-img" src="https://pkmncards.com/wp-content/uploads/en_US-EX08-105-latias_star.jpg" alt="Latias">
+            </div>
+            <div class="pokemon-words-container-left">
+                <p class="pokemon-name">
+                    <b>Latias</b>
+                </p>
+                <p class="words">
+                    Latias Star (Japanese: ラティアス☆ Latias☆) is a Colorless-type 
+                    Basic Pokémon card. It is part of the EX Deoxys expansion.
+                </p>
+                <p class="words">
+                    Healing Light's Japanese name is that of Soft Light, a Warrior Skill
+                    later introduced in Pokémon Conquest. This card is based on the Shiny version of Latias.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon right align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-right">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/165398.jpg" alt="Latios">
+            </div>
+            <div class="pokemon-words-container-right">
+                <p class="pokemon-name">
+                    <b>Latios</b>
+                </p>
+                <p class="words">
+                    Latios Star (Japanese: ラティオス☆ Latios☆) is a Colorless-type Basic Pokémon card.
+                    It is part of the EX Deoxys expansion.
+                </p>
+                <p class="words">
+                    This card is based on the Shiny version of Latios.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon left align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-left">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/165536.jpg" alt="Rayquaza">
+            </div>
+            <div class="pokemon-words-container-left">
+                <p class="pokemon-name">
+                    <b>Rayquaza</b>
+                </p>
+                <p class="words">
+                    Rayquaza Star (Japanese: レックウザ☆ Rayquaza☆) is a Colorless-type 
+                    Basic Pokémon card. It is part of the EX Deoxys expansion.
+                </p>
+                <p class="words">
+                    This card is based on the Shiny version of Rayquaza.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon right align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-right">
+                <img class="pokemon-img" src="https://www.cardsbybrammers.com.au/assets/full/unfor113.jpg?20200710043545" alt="Entei">
+            </div>
+            <div class="pokemon-words-container-right">
+                <p class="pokemon-name">
+                    <b>Entei</b>
+                </p>
+                <p class="words">
+                    Entei Star (Japanese: エンテイ☆ Entei☆) is a Fire-type Basic Pokémon card. 
+                    It is part of the EX Unseen Forces expansion.
+                </p>
+                <p class="words">
+                    This card is based on the Shiny version of Entei.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon left align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-left">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/157378.jpg" alt="Raikou">
+            </div>
+            <div class="pokemon-words-container-left">
+                <p class="pokemon-name">
+                    <b>Raikou</b>
+                </p>
+                <p class="words">
+                    Raikou Star (Japanese: ライコウ☆ Raikou☆) is a Lightning-type 
+                    Basic Pokémon card. It is part of the EX Unseen Forces expansion.
+                </p>
+                <p class="words">
+                    This card is based on the Shiny version of Raikou.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon right align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-right">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/157507.jpg" alt="Suicune">
+            </div>
+            <div class="pokemon-words-container-right">
+                <p class="pokemon-name">
+                    <b>Suicune</b>
+                </p>
+                <p class="words">
+                    Suicune Star (Japanese: スイクン☆ Suicune☆) is a Water-type Basic Pokémon
+                    card. It is part of the EX Unseen Forces expansion.
+                </p>
+                <p class="words">
+                    This card is based on the Shiny version of Suicune.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon left align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-left">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/157069.jpg" alt="Groudon">
+            </div>
+            <div class="pokemon-words-container-left">
+                <p class="pokemon-name">
+                    <b>Groudon</b>
+                </p>
+                <p class="words">
+                    Groudon Star (Japanese: グラードン☆ Groudon ☆) is a Fighting-type 
+                    Basic Pokémon card. It is part of the EX Delta Species expansion.
+                </p>
+                <p class="words">
+                    This card is based on the Shiny version of Groudon.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon right align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-right">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/157158.jpg" alt="Kyogre">
+            </div>
+            <div class="pokemon-words-container-right">
+                <p class="pokemon-name">
+                    <b>Kyogre</b>
+                </p>
+                <p class="words">
+                    Kyogre Star (Japanese: カイオーガ☆ Kaiorga ☆) is a Water-type
+                    Basic Pokémon card. It is part of the EX Delta Species expansion.
+                </p>
+                <p class="words">
+                    This card is based on the Shiny version of Kyogre. Sheer Cold 
+                    is a move in the Pokémon games that Kyogre can learn.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon left align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-left">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/157246.jpg" alt="Metagross">
+            </div>
+            <div class="pokemon-words-container-left">
+                <p class="pokemon-name">
+                    <b>Metagross</b>
+                </p>
+                <p class="words">
+                    Metagross Star (Japanese: メタグロス☆ Metagross ☆) is a 
+                    Metal-type Basic Pokémon card. It is part of the EX Delta Species expansion.
+                </p>
+                <p class="words">
+                    This card is based on the Shiny version of Metagross. 
+                    Hyper Beam is a move in the Pokémon games that Metagross can learn.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon right align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-right">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/163407.jpg" alt="Regice">
+            </div>
+            <div class="pokemon-words-container-right">
+                <p class="pokemon-name">
+                    <b>Regice</b>
+                </p>
+                <p class="words">
+                    Regice Star (Japanese: レジアイス☆ Regice☆) is a Water-type
+                    Basic Pokémon card. It is part of the EX Legend Maker expansion.
+                </p>
+                <p class="words">
+                    This card is based on the Shiny version of Regice.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon left align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-left">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/163408.jpg" alt="Regirock">
+            </div>
+            <div class="pokemon-words-container-left">
+                <p class="pokemon-name">
+                    <b>Regirock</b>
+                </p>
+                <p class="words">
+                    Regirock Star (Japanese: レジロック☆ Regirock☆) is a Fighting-type
+                    Basic Pokémon card. It is part of the EX Legend Maker expansion.
+                </p>
+                <p class="words">
+                    Dig Drain's Japanese name first appeared as the Draining Cut attack 
+                    on Kabutops from Skyridge. This card is based on the Shiny version of Regirock.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon right align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-right">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/163409.jpg" alt="Registeel">
+            </div>
+            <div class="pokemon-words-container-right">
+                <p class="pokemon-name">
+                    <b>Registeel</b>
+                </p>
+                <p class="words">
+                    Registeel Star (Japanese: レジスチル☆ Registeel☆) is a Metal-type 
+                    Basic Pokémon card. It is part of the EX Legend Maker expansion.
+                </p>
+                <p class="words">
+                    This card is based on the Shiny version of Registeel.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon left align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-left">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/156878.jpg" alt="Celebi">
+            </div>
+            <div class="pokemon-words-container-left">
+                <p class="pokemon-name">
+                    <b>Celebi</b>
+                </p>
+                <p class="words">
+                    Celebi Star (Japanese: セレビィ☆ Celebi☆) is a Grass-type Basic Pokémon card. It is part of the EX Crystal Guardians expansion.
+                </p>
+                <p class="words">
+                    This card is based on the Shiny version of Celebi
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon right align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-right">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/156806.jpg" alt="Alakazam">
+            </div>
+            <div class="pokemon-words-container-right">
+                <p class="pokemon-name">
+                    <b>Alakazam</b>
+                </p>
+                <p class="words">
+                    Alakazam Star (Japanese: フーディン☆ Foodin☆) is a Psychic-type Basic Pokémon card. It is part of the EX Crystal Guardians expansion.
+                </p>
+                <p class="words">
+                    This card is based on the Shiny version of Alakazam.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon left align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-left">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/157078.jpg" alt="Gyarados">
+            </div>
+            <div class="pokemon-words-container-left">
+                <p class="pokemon-name">
+                    <b>Gyarados</b>
+                </p>
+                <p class="words">
+                    Gyarados Star δ (Japanese: ギャラドス☆ δ Gyarados ☆ δ) is a Fire-type Basic Pokémon. It is part of the EX Holon Phantoms expansion.
+                </p>
+                <p class="words">
+                    This card features the Shiny version of Gyarados. A red Gyarados appears in the Generation II games and their remakes.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon right align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-right">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/157262.jpg" alt="Mewtwo">
+            </div>
+            <div class="pokemon-words-container-right">
+                <p class="pokemon-name">
+                    <b>Mewtwo</b>
+                </p>
+                <p class="words">
+                    Mewtwo Star (Japanese: ミュウツー☆ Mewtwo ☆) is a Psychic-type Basic Pokémon card. It is part of the EX Holon Phantoms expansion.
+                </p>
+                <p class="words">
+                    This card is based on the Shiny version of Mewtwo.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon left align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-left">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/157326.jpg" alt="Pikachu">
+            </div>
+            <div class="pokemon-words-container-left">
+                <p class="pokemon-name">
+                    <b>Pikachu</b>
+                </p>
+                <p class="words">
+                    Pikachu Star (Japanese: ピカチュウ☆ Pikachu ☆) is a Lightning-type Basic Pokémon card. It is part of the EX Holon Phantoms expansion.
+                </p>
+                <p class="words">
+                    This card features the Shiny version of Pikachu. Thunder Shock, formatted on this card
+                    as Thundershock, is a move in the Pokémon games that Pikachu can learn. Spring Back's 
+                    Japanese name is that of Payback, a move introduced in the Generation IV Pokémon games 
+                    that Pikachu cannot learn.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon right align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-right">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/156884.jpg" alt="Charizard">
+            </div>
+            <div class="pokemon-words-container-right">
+                <p class="pokemon-name">
+                    <b>Charizard</b>
+                </p>
+                <p class="words">
+                    Charizard Star δ (Japanese: リザードン☆ δ Lizardon☆ δ) is a Darkness-type Basic Pokémon. It is part of the EX Dragon Frontiers expansion.
+                </p>
+                <p class="words">
+                    This card features the Shiny version of Charizard. Rotating Claws is an 
+                    attack that first appeared on Rocket's Scizor ex from EX Team Rocket Returns.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon left align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-left">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/157259.jpg" alt="Mew">
+            </div>
+            <div class="pokemon-words-container-left">
+                <p class="pokemon-name">
+                    <b>Mew</b>
+                </p>
+                <p class="words">
+                    Mew Star δ (Japanese: ミュウ☆ δ Mew☆ δ) is a Water-type Basic Pokémon. It is part of the EX Dragon Frontiers expansion.
+                </p>
+                <p class="words">
+                    This card features the Shiny version of Mew
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon right align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-right">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/157030.jpg" alt="Flareon">
+            </div>
+            <div class="pokemon-words-container-right">
+                <p class="pokemon-name">
+                    <b>Flareon</b>
+                </p>
+                <p class="words">
+                    Flareon Star (Japanese: ブースター☆ Booster☆) is a Fire-type Basic Pokémon card. It is part of the EX Power Keepers expansion.
+                </p>
+                <p class="words">
+                    This card features the Shiny version of Flareon. Flamethrower is a move in the Pokémon games that Flareon can learn.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon left align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-left">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/157134.jpg" alt="Jolteon">
+            </div>
+            <div class="pokemon-words-container-left">
+                <p class="pokemon-name">
+                    <b>Jolteon</b>
+                </p>
+                <p class="words">
+                    Jolteon Star (Japanese: サンダース☆ Thunders☆) is a Lightning-type Basic Pokémon card. It is part of the EX Power Keepers expansion.
+                </p>
+                <p class="words">
+                    This card is based on the Shiny version of Jolteon. Agility is a move in the Pokémon games that Jolteon can learn.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon right align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-right">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/157599.jpg" alt="Vaporeon">
+            </div>
+            <div class="pokemon-words-container-right">
+                <p class="pokemon-name">
+                    <b>Vaporeon</b>
+                </p>
+                <p class="words">
+                    Vaporeon Star (Japanese: シャワーズ☆ Showers☆) is a Water-type Basic Pokémon card. It is part of the EX Power Keepers expansion.
+                </p>
+                <p class="words">
+                    This card is based on the Shiny version of Vaporeon. Whirlpool is a
+                    move in the Pokémon games that Vaporeon can learn via HM06 in Generation 
+                    II, or via HM05 in Pokémon HeartGold and SoulSilver.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon left align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-left">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/202885.jpg" alt="Espeon">
+            </div>
+            <div class="pokemon-words-container-left">
+                <p class="pokemon-name">
+                    <b>Espeon</b>
+                </p>
+                <p class="words">
+                    Espeon Star (Japanese: エーフィ☆ Eifie ☆) is a Psychic-type Stage 1 Pokémon card. It is part of POP Series 5.
+                </p>
+                <p class="words">
+                    This card was released in POP Series 5, first released as one of the Japanese PLAY
+                    Promotional cards. In Japan, it was made available by the Daisuki Pokémon Fan Club 
+                    from 2005 to 2006. To obtain this card, members needed to accumulate 40,000 points 
+                    through various meets and activities. Due to the relatively short time frame that 
+                    points could be earned, the Japanese print of this card was extremely difficult to obtain.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pokemon right align container -->
+        <div class="pokemon-container">
+            <div class="pokemon-right">
+                <img class="pokemon-img" src="https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/202886.jpg" alt="Umbreon">
+            </div>
+            <div class="pokemon-words-container-right">
+                <p class="pokemon-name">
+                    <b>Umbreon</b>
+                </p>
+                <p class="words">
+                    Umbreon Star (Japanese: ブラッキー☆ Blacky ☆) is a Darkness-type Basic Pokémon card. It is part of POP Series 5.
+                </p>
+                <p class="words">
+                    This card was released in POP Series 5, first released as one of the Japanese
+                    PLAY Promotional cards. In Japan, it was made available by the Daisuki Pokémon
+                    Fan Club from 2005 to 2006. To obtain this card, members needed to accumulate
+                    70,000 points through various meets and activities. Due to the relatively short
+                    time frame that points could be earned, the Japanese print of this card was 
+                    extremely difficult to obtain.
+                </p>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
